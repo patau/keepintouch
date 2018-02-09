@@ -1,0 +1,6 @@
+framework module Pods_KeepInTouchTests {
+  umbrella header "Pods-KeepInTouchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
