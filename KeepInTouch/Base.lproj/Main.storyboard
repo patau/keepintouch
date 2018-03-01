@@ -42,6 +42,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="PxD-AQ-UE5"/>
                         <barButtonItem title="Continue" id="JrS-l5-ZxN">
                             <connections>
+                                <action selector="tapNameVCContinue:" destination="qlP-t0-S73" id="I69-la-tkH"/>
                                 <segue destination="Huz-8u-YFZ" kind="show" id="OAN-Cr-tuC">
                                     <nil key="action"/>
                                 </segue>
@@ -50,6 +51,9 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ehF-LG-e6d"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="uwe-Im-taV" id="Dqh-SW-jBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgS-w9-EWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,7 +165,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nhx-7X-Uqz"/>
+        <segue reference="OAN-Cr-tuC"/>
         <segue reference="pV7-LU-8X4"/>
     </inferredMetricsTieBreakers>
 </document>
