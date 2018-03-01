@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What name do you want to go by?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMF-oq-BQX">
                                 <rect key="frame" x="382" y="340" width="260" height="21"/>
@@ -52,12 +52,12 @@
                     <navigationItem key="navigationItem" id="ehF-LG-e6d"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
-                        <outlet property="nameTextField" destination="uwe-Im-taV" id="Dqh-SW-jBp"/>
+                        <outlet property="nameTextField" destination="uwe-Im-taV" id="6Iq-93-Od7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgS-w9-EWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="265"/>
+            <point key="canvasLocation" x="827.69784172661878" y="264.74820143884892"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="YpK-TD-pN8">
@@ -166,6 +166,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OAN-Cr-tuC"/>
-        <segue reference="pV7-LU-8X4"/>
+        <segue reference="b5D-c1-A8b"/>
     </inferredMetricsTieBreakers>
 </document>
