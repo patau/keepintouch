@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "454981784CF33A9574A145B681A85A03"
+=======
+               BlueprintIdentifier = "21A821D91567DF432C74FECD08A63446"
+>>>>>>> hannah
                BuildableName = "Pods_KeepInTouch.framework"
                BlueprintName = "Pods-KeepInTouch"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +51,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "454981784CF33A9574A145B681A85A03"
+=======
+            BlueprintIdentifier = "21A821D91567DF432C74FECD08A63446"
+>>>>>>> hannah
             BuildableName = "Pods_KeepInTouch.framework"
             BlueprintName = "Pods-KeepInTouch"
             ReferencedContainer = "container:Pods.xcodeproj">

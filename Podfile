@@ -6,6 +6,7 @@ target 'KeepInTouch' do
   use_frameworks!
 
 pod 'Firebase/Core'
+pod 'Firebase/Database'
   # Pods for KeepInTouch
 
   target 'KeepInTouchTests' do
