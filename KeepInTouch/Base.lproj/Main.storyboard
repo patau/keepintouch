@@ -27,6 +27,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="inputtedName:" destination="qlP-t0-S73" eventType="editingChanged" id="b88-7V-ICS"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What name do you want to go by?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMF-oq-BQX">
                                 <rect key="frame" x="382" y="340" width="260" height="21"/>
@@ -42,7 +45,6 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="PxD-AQ-UE5"/>
                         <barButtonItem title="Continue" id="JrS-l5-ZxN">
                             <connections>
-                                <action selector="tapNameVCContinue:" destination="qlP-t0-S73" id="I69-la-tkH"/>
                                 <segue destination="Huz-8u-YFZ" kind="show" id="OAN-Cr-tuC">
                                     <nil key="action"/>
                                 </segue>
@@ -82,13 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Go Back" id="E19-Mf-A4i">
-                            <connections>
-                                <segue destination="qlP-t0-S73" kind="show" id="pV7-LU-8X4">
-                                    <nil key="action"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem title="Go Back" id="E19-Mf-A4i"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="hCn-hc-tMu"/>
                         <barButtonItem title="Continue" id="twB-T0-RW3">
                             <connections>
@@ -127,11 +123,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Go Back" id="iUk-RG-r9i">
-                            <connections>
-                                <segue destination="Huz-8u-YFZ" kind="show" id="nhx-7X-Uqz"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem title="Go Back" id="iUk-RG-r9i"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="qgj-4H-rBe"/>
                         <barButtonItem title="Continue" id="abr-Fm-aOu"/>
                     </toolbarItems>
@@ -164,8 +156,4 @@
             <point key="canvasLocation" x="114" y="265"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="OAN-Cr-tuC"/>
-        <segue reference="b5D-c1-A8b"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -10,9 +10,6 @@
 		1538B2B1914195F663847A67 /* Pods_KeepInTouchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A0EE5B17235548D3867F84 /* Pods_KeepInTouchTests.framework */; };
 		3D2B5DE99A461CFB8E200A6C /* Pods_KeepInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C397A4765135CC1E99D2F78C /* Pods_KeepInTouch.framework */; };
 		85EA4C4D8D17FD5DDF01B0E5 /* Pods_KeepInTouchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48209C27FC7F98775DE46D61 /* Pods_KeepInTouchUITests.framework */; };
-		92F6A3202047D59D00CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A31F2047D59D00CF5B95 /* GoogleService-Info.plist */; };
-		92F6A3212047D59D00CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A31F2047D59D00CF5B95 /* GoogleService-Info.plist */; };
-		92F6A3222047D59D00CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A31F2047D59D00CF5B95 /* GoogleService-Info.plist */; };
 		CF3D6452202A80BF00780C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6451202A80BF00780C62 /* AppDelegate.swift */; };
 		CF3D6454202A80BF00780C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6453202A80BF00780C62 /* ViewController.swift */; };
 		CF3D6457202A80BF00780C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3D6455202A80BF00780C62 /* Main.storyboard */; };
@@ -24,6 +21,7 @@
 		CF8F8BF02047C05E00814060 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8BEF2047C05E00814060 /* SignUpViewController.swift */; };
 		CF8F8BF42047C6B800814060 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8BF32047C6B800814060 /* UserInfo.swift */; };
 		CF8F8BF62047C6DE00814060 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8BF52047C6DE00814060 /* ModelController.swift */; };
+		CFF1A61D2048A78B00845560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFF1A61C2048A78A00845560 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +47,6 @@
 		57A0EE5B17235548D3867F84 /* Pods_KeepInTouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78601932087CC469120EFA3E /* Pods-KeepInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.release.xcconfig"; sourceTree = "<group>"; };
 		795142E4769A6955A76145CE /* Pods-KeepInTouchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.release.xcconfig"; sourceTree = "<group>"; };
-		92F6A31F2047D59D00CF5B95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B95A2F4993B9125F396E6DEA /* Pods-KeepInTouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C344EB2EDF9C91DF1842392E /* Pods-KeepInTouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchUITests/Pods-KeepInTouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C397A4765135CC1E99D2F78C /* Pods_KeepInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +67,7 @@
 		CF8F8BEF2047C05E00814060 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CF8F8BF32047C6B800814060 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF8F8BF52047C6DE00814060 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		CFF1A61C2048A78A00845560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F051066B3C038DAFEF55B4EC /* Pods-KeepInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,11 +147,11 @@
 		CF3D6450202A80BF00780C62 /* KeepInTouch */ = {
 			isa = PBXGroup;
 			children = (
-				92F6A31F2047D59D00CF5B95 /* GoogleService-Info.plist */,
 				CF3D6451202A80BF00780C62 /* AppDelegate.swift */,
 				CF3D6453202A80BF00780C62 /* ViewController.swift */,
 				CF3D6455202A80BF00780C62 /* Main.storyboard */,
 				CF8F8BEF2047C05E00814060 /* SignUpViewController.swift */,
+				CFF1A61C2048A78A00845560 /* GoogleService-Info.plist */,
 				CF8F8BF32047C6B800814060 /* UserInfo.swift */,
 				CF8F8BF52047C6DE00814060 /* ModelController.swift */,
 				CF3D645B202A80BF00780C62 /* Assets.xcassets */,
@@ -302,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF3D645F202A80BF00780C62 /* LaunchScreen.storyboard in Resources */,
-				92F6A3202047D59D00CF5B95 /* GoogleService-Info.plist in Resources */,
+				CFF1A61D2048A78B00845560 /* GoogleService-Info.plist in Resources */,
 				CF3D645C202A80BF00780C62 /* Assets.xcassets in Resources */,
 				CF3D6457202A80BF00780C62 /* Main.storyboard in Resources */,
 			);
@@ -312,7 +310,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F6A3212047D59D00CF5B95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F6A3222047D59D00CF5B95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

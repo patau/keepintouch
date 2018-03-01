@@ -22,12 +22,29 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //var modelController = ModelController
 
         let userInfo = modelController.userInfo
-             print("NAME: ", userInfo.displayName)
+        print("NAME: ", userInfo.displayName)
+        
+    }
 
-        // Do any additional setup after loading the view.
+    
+    @IBAction func inputtedName(_ sender: UITextView) {
+        print("NAMED CHANGED: ", sender.text)
+        modelController.userInfo.displayName = sender.text!
+        
+        /*
+        // TODO: ADD THIS TO LAST PAGE OF REGISTRATION
+        //assuming that the name gathered from above is the username, we can enter it with
+        //the following statement. The displayName will be the key for a new child on the
+        //user object
+        userRef.child(modelController.userInfo.displayName).setValue(["username":
+            modelController.userInfo.displayName])
+        
+        //This same process can be followed for all user related data input, use the
+        //userRef variable, pick the child associated with the user being created,
+        //and set the field and value
+         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,25 +52,6 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func tapNameVCContinue(_ sender: UIBarButtonItem) {
-        modelController.userInfo.displayName = nameTextField.text!
-        print("UPDATED NAME: ", modelController.userInfo.displayName)
-        
-        //assuming that the name gathered from above is the username, we can enter it with
-        //the following statement. The displayName will be the key for a new child on the
-        //user object
-        userRef.child(modelController.userInfo.displayName).setValue(["username":
-        modelController.userInfo.displayName])
-        
-        //This same process can be followed for all user related data input, use the
-        //userRef variable, pick the child associated with the user being created,
-        //and set the field and value
-        
-        
-        
-        
-    }
     
     // MARK: - Navigation
 
@@ -61,8 +59,8 @@ class SignUpViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        //var segueVC = SignUpViewController()
-        //segueVC.name = self.name
+        var segueVC = segue.destination as! SignUpViewController
+        segueVC.modelController = self.modelController
         print("Seguing")
     }
     
