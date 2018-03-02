@@ -7,9 +7,16 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseDatabase
 class CreateGroupViewController: UIViewController {
 
+    let groupRef = Database.database().reference().child("groups")
+    @IBOutlet weak var groupNameText: UITextField!
+    @IBOutlet weak var confirmGroupName: UIButton!
+    
+    var modelController = ModelController()
+    var groupName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +28,20 @@ class CreateGroupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func textChanged(_ sender: UITextView) {
+        print(sender.text!)
+        groupName = sender.text!
+        
+        
+    }
+    
+    @IBAction func confirmName(_ sender: UIButton) {
+        var groupCode = arc4random()
+        var stringCode = String(groupCode)
+        groupRef.child(stringCode).child("users").setValue(["name": "dave"])
+        groupRef.child(stringCode).child("group data").setValue(["group name": groupName])
+        
+    }
     /*
     // MARK: - Navigation
 

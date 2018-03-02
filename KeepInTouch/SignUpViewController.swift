@@ -82,6 +82,8 @@ class SignUpViewController: UIViewController {
             modelController.userInfo.displayName])
     userRef.child(modelController.userInfo.displayName).setValue(["icon":
             modelController.userInfo.userIcon])
+        print(modelController.userInfo.userIcon)
+        print(modelController.userInfo.displayName)
         
     }
     

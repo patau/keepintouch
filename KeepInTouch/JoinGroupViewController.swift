@@ -7,15 +7,39 @@
 //
 
 import UIKit
-
+import Firebase
+import FirebaseDatabase
 class JoinGroupViewController: UIViewController {
 
+    
+    let groupRef = Database.database().reference().child("groups")
+    var groupCode = ""
+    
+    @IBOutlet weak var roomCodeField: UITextField!
+    @IBOutlet weak var confrimGroup: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func enterGroupCode(_ sender: UITextField) {
+        groupCode = sender.text!
+    }
+    
+    
+    @IBAction func confirmGroup(_ sender: UIButton) {
+        groupRef.child(groupCode).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let users = value?["users"] as? String ?? ""
+            //let user = User(username: username)
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

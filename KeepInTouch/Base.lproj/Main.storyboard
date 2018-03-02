@@ -248,6 +248,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enterGroupCode:" destination="Nff-lL-9tW" eventType="editingChanged" id="Wfo-IY-aDC"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter provided room code to join group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcY-nm-RZr">
                                 <rect key="frame" x="370" y="351" width="299" height="21"/>
@@ -256,13 +259,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-Xf-LDp">
+                                <rect key="frame" x="475" y="443" width="89" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmGroup:" destination="Nff-lL-9tW" eventType="touchUpInside" id="nI7-mL-8iD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="confrimGroup" destination="j0J-Xf-LDp" id="wCW-1s-ij4"/>
+                        <outlet property="roomCodeField" destination="i0q-Bg-uKh" id="GaP-EL-qaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h84-cc-RtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281" y="986"/>
+            <point key="canvasLocation" x="2280.7553956834531" y="985.61151079136698"/>
         </scene>
         <!--Create Group View Controller-->
         <scene sceneID="5rB-46-eeT">
@@ -282,6 +297,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChanged:" destination="SyX-b3-3sF" eventType="editingChanged" id="Jsg-V3-3uG"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irv-1b-Gl4">
                                 <rect key="frame" x="505" y="373" width="103" height="21"/>
@@ -290,6 +308,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4m-jd-myH">
+                                <rect key="frame" x="509" y="458" width="94" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmName:" destination="SyX-b3-3sF" eventType="touchUpInside" id="oQQ-Rv-nwe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -298,6 +324,10 @@
                         <barButtonItem title="Continue" id="21U-oY-iWc"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="confirmGroupName" destination="w4m-jd-myH" id="I7Z-eu-xJZ"/>
+                        <outlet property="groupNameText" destination="JlR-J7-CJw" id="Ts3-Lv-niV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SE3-v1-9rR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
