@@ -179,7 +179,11 @@
                     <toolbarItems>
                         <barButtonItem title="Go Back" id="iUk-RG-r9i"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="qgj-4H-rBe"/>
-                        <barButtonItem title="Continue" id="abr-Fm-aOu"/>
+                        <barButtonItem title="Continue" id="abr-Fm-aOu">
+                            <connections>
+                                <segue destination="ZdG-FE-AoR" kind="show" identifier="groupsChoose" id="Rz1-vo-sUL"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
@@ -189,6 +193,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBK-Rh-mBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="826.61870503597129" y="1690.6474820143885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ijk-9x-Hpd">
+            <objects>
+                <viewController id="ZdG-FE-AoR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QHn-03-VZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="a13-Xf-h5S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SgR-FS-w9p">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8x-6g-Psn">
+                                <rect key="frame" x="848" y="402" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Join Group"/>
+                                <connections>
+                                    <segue destination="Nff-lL-9tW" kind="show" id="5EN-16-wql"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSB-Qw-H8w">
+                                <rect key="frame" x="188" y="402" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create Group"/>
+                                <connections>
+                                    <segue destination="SyX-b3-3sF" kind="show" id="CzV-W9-uqg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edh-Ba-Uca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="986"/>
+        </scene>
+        <!--Join Group View Controller-->
+        <scene sceneID="RcS-Ws-fMA">
+            <objects>
+                <viewController id="Nff-lL-9tW" customClass="JoinGroupViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="epW-Rf-lhC"/>
+                        <viewControllerLayoutGuide type="bottom" id="MGI-qr-jnf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="00p-Hu-5sQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tap here to enter room code" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i0q-Bg-uKh">
+                                <rect key="frame" x="417" y="380" width="205" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter provided room code to join group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcY-nm-RZr">
+                                <rect key="frame" x="370" y="351" width="299" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h84-cc-RtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="986"/>
+        </scene>
+        <!--Create Group View Controller-->
+        <scene sceneID="5rB-46-eeT">
+            <objects>
+                <viewController id="SyX-b3-3sF" customClass="CreateGroupViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LV7-JQ-seb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZwS-Zw-cf2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gpn-Cs-tLg">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tap here to enter group name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlR-J7-CJw">
+                                <rect key="frame" x="450" y="402" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irv-1b-Gl4">
+                                <rect key="frame" x="505" y="373" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="sEP-9B-BuU"/>
+                        <barButtonItem title="Continue" id="21U-oY-iWc"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SE3-v1-9rR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577.6978417266187" y="1691.3669064748203"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kiH-2T-q2m">

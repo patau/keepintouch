@@ -22,6 +22,8 @@
 		CF8F8BF42047C6B800814060 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8BF32047C6B800814060 /* UserInfo.swift */; };
 		CF8F8BF62047C6DE00814060 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F8BF52047C6DE00814060 /* ModelController.swift */; };
 		CFED89752049F37E0049DF33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFED89742049F37E0049DF33 /* GoogleService-Info.plist */; };
+		CFED89772049F7A20049DF33 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED89762049F7A20049DF33 /* CreateGroupViewController.swift */; };
+		CFED89792049F7BD0049DF33 /* JoinGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED89782049F7BD0049DF33 /* JoinGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		CF8F8BF32047C6B800814060 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CF8F8BF52047C6DE00814060 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		CFED89742049F37E0049DF33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFED89762049F7A20049DF33 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		CFED89782049F7BD0049DF33 /* JoinGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupViewController.swift; sourceTree = "<group>"; };
 		F051066B3C038DAFEF55B4EC /* Pods-KeepInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,8 @@
 				CF3D6451202A80BF00780C62 /* AppDelegate.swift */,
 				CF3D6453202A80BF00780C62 /* ViewController.swift */,
 				CF3D6455202A80BF00780C62 /* Main.storyboard */,
+				CFED89782049F7BD0049DF33 /* JoinGroupViewController.swift */,
+				CFED89762049F7A20049DF33 /* CreateGroupViewController.swift */,
 				CF8F8BEF2047C05E00814060 /* SignUpViewController.swift */,
 				CF8F8BF32047C6B800814060 /* UserInfo.swift */,
 				CF8F8BF52047C6DE00814060 /* ModelController.swift */,
@@ -482,8 +488,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF3D645A202A80BF00780C62 /* KeepInTouch.xcdatamodeld in Sources */,
+				CFED89772049F7A20049DF33 /* CreateGroupViewController.swift in Sources */,
 				CF3D6454202A80BF00780C62 /* ViewController.swift in Sources */,
 				CF8F8BF02047C05E00814060 /* SignUpViewController.swift in Sources */,
+				CFED89792049F7BD0049DF33 /* JoinGroupViewController.swift in Sources */,
 				CF8F8BF62047C6DE00814060 /* ModelController.swift in Sources */,
 				CF8F8BF42047C6B800814060 /* UserInfo.swift in Sources */,
 				CF3D6452202A80BF00780C62 /* AppDelegate.swift in Sources */,
