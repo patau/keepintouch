@@ -105,6 +105,18 @@
                                     <action selector="buttonDidClick3:" destination="Huz-8u-YFZ" eventType="touchUpInside" id="raT-yb-Qji"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="8Ny-4Y-hGz">
+                                <rect key="frame" x="91" y="286" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="ehE-RL-uF0">
+                                <rect key="frame" x="762" y="286" width="248" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Water" translatesAutoresizingMaskIntoConstraints="NO" id="WRL-dL-Rul">
+                                <rect key="frame" x="428" y="286" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -172,7 +184,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="confirmButton" destination="3jU-s4-z3I" id="Jll-VZ-9mU"/>
-                        <outlet property="confirmProfileIcon" destination="xyg-1F-FA1" id="pnj-PO-PDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBK-Rh-mBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -232,6 +243,8 @@
     </scenes>
     <resources>
         <image name="Grass" width="128" height="128"/>
+        <image name="Sun" width="128" height="128"/>
+        <image name="Water" width="128" height="128"/>
         <image name="grass.png" width="256" height="256"/>
         <image name="sun.png" width="256" height="256"/>
         <image name="water.png" width="256" height="256"/>

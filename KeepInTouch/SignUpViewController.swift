@@ -61,17 +61,18 @@ class SignUpViewController: UIViewController {
     //These functions are super redundant, but they hardcode the user icon based on available
     //default images. This information will be saved along with a user's display name.
     @IBAction func buttonDidClick1(_ sender: UIButton) {
-        print("Img: ", sender.currentImage!)
+        //print("Img: ", sender.currentImage!)
         modelController.userInfo.userIcon = "Sun"
     }
     
     @IBAction func buttonDidClick2(_ sender: UIButton) {
-        print("Img: ", sender.currentImage!)
+        //print("Img: ", sender.currentImage!)
         modelController.userInfo.userIcon = "Water"
     }
     
     @IBAction func buttonDidClick3(_ sender: UIButton) {
-        print("Img: ", sender.currentImage!)
+        //print("Img: ", sender.currentImage!)
+        print("Img: grass chosen")
         modelController.userInfo.userIcon = "Grass"
     }
     
