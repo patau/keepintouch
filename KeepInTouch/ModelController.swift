@@ -11,7 +11,7 @@ import Foundation
 class ModelController {
     static let sharedInstance = ModelController()
     var userInfo = UserInfo(
-        displayName: "new user"
+        displayName: "new user", userIcon: "noImage"
     )
 }
 
