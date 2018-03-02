@@ -9,4 +9,5 @@ import Foundation
 
 struct UserInfo {
     var displayName : String
+    var userIcon: String
 }

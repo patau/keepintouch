@@ -13,6 +13,9 @@
 		92F6A3242048CAA800CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A3232048CAA800CF5B95 /* GoogleService-Info.plist */; };
 		92F6A3252048CAA800CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A3232048CAA800CF5B95 /* GoogleService-Info.plist */; };
 		92F6A3262048CAA800CF5B95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A3232048CAA800CF5B95 /* GoogleService-Info.plist */; };
+		92F6A32A20493AB900CF5B95 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A32920493AB900CF5B95 /* sun.png */; };
+		92F6A32C20493C9400CF5B95 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A32B20493C9400CF5B95 /* water.png */; };
+		92F6A32E20493CA300CF5B95 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F6A32D20493CA200CF5B95 /* grass.png */; };
 		CF3D6452202A80BF00780C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6451202A80BF00780C62 /* AppDelegate.swift */; };
 		CF3D6454202A80BF00780C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6453202A80BF00780C62 /* ViewController.swift */; };
 		CF3D6457202A80BF00780C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3D6455202A80BF00780C62 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		78601932087CC469120EFA3E /* Pods-KeepInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.release.xcconfig"; sourceTree = "<group>"; };
 		795142E4769A6955A76145CE /* Pods-KeepInTouchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.release.xcconfig"; sourceTree = "<group>"; };
 		92F6A3232048CAA800CF5B95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92F6A32920493AB900CF5B95 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../../sun.png; sourceTree = "<group>"; };
+		92F6A32B20493C9400CF5B95 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = water.png; path = ../../water.png; sourceTree = "<group>"; };
+		92F6A32D20493CA200CF5B95 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass.png; path = ../../grass.png; sourceTree = "<group>"; };
 		B95A2F4993B9125F396E6DEA /* Pods-KeepInTouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C344EB2EDF9C91DF1842392E /* Pods-KeepInTouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchUITests/Pods-KeepInTouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C397A4765135CC1E99D2F78C /* Pods_KeepInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +163,9 @@
 				CF8F8BF32047C6B800814060 /* UserInfo.swift */,
 				CF8F8BF52047C6DE00814060 /* ModelController.swift */,
 				CF3D645B202A80BF00780C62 /* Assets.xcassets */,
+				92F6A32B20493C9400CF5B95 /* water.png */,
+				92F6A32D20493CA200CF5B95 /* grass.png */,
+				92F6A32920493AB900CF5B95 /* sun.png */,
 				CF3D645D202A80BF00780C62 /* LaunchScreen.storyboard */,
 				CF3D6460202A80BF00780C62 /* Info.plist */,
 				CF3D6458202A80BF00780C62 /* KeepInTouch.xcdatamodeld */,
@@ -301,10 +310,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F6A32E20493CA300CF5B95 /* grass.png in Resources */,
 				CF3D645F202A80BF00780C62 /* LaunchScreen.storyboard in Resources */,
 				92F6A3242048CAA800CF5B95 /* GoogleService-Info.plist in Resources */,
+				92F6A32A20493AB900CF5B95 /* sun.png in Resources */,
 				CF3D645C202A80BF00780C62 /* Assets.xcassets in Resources */,
 				CF3D6457202A80BF00780C62 /* Main.storyboard in Resources */,
+				92F6A32C20493C9400CF5B95 /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

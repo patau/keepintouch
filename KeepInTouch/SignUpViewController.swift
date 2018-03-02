@@ -18,13 +18,20 @@ class SignUpViewController: UIViewController {
     
  
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var profileOption1: UIButton!
+    @IBOutlet weak var profileOption2: UIButton!
+    @IBOutlet weak var profileOption3: UIButton!
+    
+    @IBOutlet weak var confirmButton: UIButton!
+    
+    //@IBOutlet weak var confirmProfileIcon: UIImageView!
     var modelController = ModelController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let userInfo = modelController.userInfo
         print("NAME: ", userInfo.displayName)
+      
         
     }
 
@@ -38,15 +45,45 @@ class SignUpViewController: UIViewController {
         //assuming that the name gathered from above is the username, we can enter it with
         //the following statement. The displayName will be the key for a new child on the
         //user object
+         
         userRef.child(modelController.userInfo.displayName).setValue(["username":
             modelController.userInfo.displayName])
-        
-        //This same process can be followed for all user related data input, use the
+        userRef.child(modelController.userInfo.displayName).setValue(["icon":
+            modelController.userInfo.userIcon])
+         
+         //This same process can be followed for all user related data input, use the
         //userRef variable, pick the child associated with the user being created,
         //and set the field and value
          */
     }
 
+    
+    //These functions are super redundant, but they hardcode the user icon based on available
+    //default images. This information will be saved along with a user's display name.
+    @IBAction func buttonDidClick1(_ sender: UIButton) {
+        print("Img: ", sender.currentImage!)
+        modelController.userInfo.userIcon = "Sun"
+    }
+    
+    @IBAction func buttonDidClick2(_ sender: UIButton) {
+        print("Img: ", sender.currentImage!)
+        modelController.userInfo.userIcon = "Water"
+    }
+    
+    @IBAction func buttonDidClick3(_ sender: UIButton) {
+        print("Img: ", sender.currentImage!)
+        modelController.userInfo.userIcon = "Grass"
+    }
+    
+    
+    @IBAction func confirmClick(_ sender: UIButton){
+    userRef.child(modelController.userInfo.displayName).setValue(["username":
+            modelController.userInfo.displayName])
+    userRef.child(modelController.userInfo.displayName).setValue(["icon":
+            modelController.userInfo.userIcon])
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

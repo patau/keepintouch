@@ -74,12 +74,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a picture you want friends and family to see." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-ot-L3Q">
-                                <rect key="frame" x="312" y="352" width="400" height="21"/>
+                                <rect key="frame" x="356" y="243" width="400" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJB-Jt-RDs">
+                                <rect key="frame" x="91" y="286" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sun.png" backgroundImage="sun.png"/>
+                                <connections>
+                                    <action selector="buttonDidClick1:" destination="Huz-8u-YFZ" eventType="touchUpInside" id="U8t-7t-eKX"/>
+                                    <action selector="buttonDidClick:" destination="Huz-8u-YFZ" eventType="touchUpInside" id="1Vm-D5-lq5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj9-9V-s7U">
+                                <rect key="frame" x="428" y="286" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="water.png" backgroundImage="water.png"/>
+                                <connections>
+                                    <action selector="buttonDidClick2:" destination="Huz-8u-YFZ" eventType="touchUpInside" id="MtM-1H-b0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-6N-2PJ">
+                                <rect key="frame" x="754" y="286" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="grass.png" backgroundImage="grass.png"/>
+                                <connections>
+                                    <action selector="buttonDidClick3:" destination="Huz-8u-YFZ" eventType="touchUpInside" id="raT-yb-Qji"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -95,10 +120,15 @@
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="profileOption1" destination="nJB-Jt-RDs" id="6aV-gA-dut"/>
+                        <outlet property="profileOption2" destination="qj9-9V-s7U" id="djf-M7-yqR"/>
+                        <outlet property="profileOption3" destination="nL7-6N-2PJ" id="pW8-oz-hX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4HB-eW-S7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="976"/>
+            <point key="canvasLocation" x="827.69784172661878" y="975.5395683453238"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="OAA-lm-CYo">
@@ -113,12 +143,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="do you want to use this picture?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsL-5y-vuc">
-                                <rect key="frame" x="491" y="335" width="244" height="21"/>
+                                <rect key="frame" x="434" y="200" width="244" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="xyg-1F-FA1">
+                                <rect key="frame" x="436" y="304" width="240" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-s4-z3I">
+                                <rect key="frame" x="500" y="581" width="113" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmClick:" destination="0xH-mI-X9M" eventType="touchUpInside" id="Egu-Qi-6M0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -128,10 +170,14 @@
                         <barButtonItem title="Continue" id="abr-Fm-aOu"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="3jU-s4-z3I" id="Jll-VZ-9mU"/>
+                        <outlet property="confirmProfileIcon" destination="xyg-1F-FA1" id="pnj-PO-PDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBK-Rh-mBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="1691"/>
+            <point key="canvasLocation" x="826.61870503597129" y="1690.6474820143885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kiH-2T-q2m">
@@ -184,4 +230,10 @@
             <point key="canvasLocation" x="113.84892086330936" y="1062.5899280575541"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Grass" width="128" height="128"/>
+        <image name="grass.png" width="256" height="256"/>
+        <image name="sun.png" width="256" height="256"/>
+        <image name="water.png" width="256" height="256"/>
+    </resources>
 </document>
