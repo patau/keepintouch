@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct UserInfo {
     var displayName : String
-    var userIcon: String
+    var userIcon: UIImage
 }

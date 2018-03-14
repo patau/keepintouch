@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 class ModelController {
     static let sharedInstance = ModelController()
     var userInfo = UserInfo(
-        displayName: "new user", userIcon: "noImage"
+        displayName: "new user", userIcon: UIImage()
     )
 }
 

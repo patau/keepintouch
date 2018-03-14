@@ -18,9 +18,7 @@ class SignUpViewController: UIViewController {
     
  
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var profileOption1: UIButton!
-    @IBOutlet weak var profileOption2: UIButton!
-    @IBOutlet weak var profileOption3: UIButton!
+    
     
     @IBOutlet weak var confirmButton: UIButton!
     
@@ -56,25 +54,6 @@ class SignUpViewController: UIViewController {
         //and set the field and value
          */
     }
-
-    
-    //These functions are super redundant, but they hardcode the user icon based on available
-    //default images. This information will be saved along with a user's display name.
-    @IBAction func buttonDidClick1(_ sender: UIButton) {
-        //print("Img: ", sender.currentImage!)
-        modelController.userInfo.userIcon = "Sun"
-    }
-    
-    @IBAction func buttonDidClick2(_ sender: UIButton) {
-        //print("Img: ", sender.currentImage!)
-        modelController.userInfo.userIcon = "Water"
-    }
-    
-    @IBAction func buttonDidClick3(_ sender: UIButton) {
-        //print("Img: ", sender.currentImage!)
-        print("Img: grass chosen")
-        modelController.userInfo.userIcon = "Grass"
-    }
     
     
     @IBAction func confirmClick(_ sender: UIButton){
@@ -99,11 +78,13 @@ class SignUpViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if (segue.identifier != "groupsChoose") {
-            var segueVC = segue.destination as! SignUpViewController
+        if (segue.identifier == "chooseImageSegue") {
+            let segueVC = segue.destination as! ChooseImageViewController
             segueVC.modelController = self.modelController
-            print("Seguing")
-        }
+            print("chooseImageSegue: seguing")
+        } else if (segue.identifier == "groupsChoose") {
+            print("GROUPS CHOOSE")
+        } 
         
     }
     
