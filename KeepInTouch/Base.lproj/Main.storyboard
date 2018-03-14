@@ -141,17 +141,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="xyg-1F-FA1">
-                                <rect key="frame" x="436" y="304" width="240" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-s4-z3I">
                                 <rect key="frame" x="500" y="581" width="113" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Confirm"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-vL-WOq">
-                                <rect key="frame" x="92" y="344" width="240" height="128"/>
+                                <rect key="frame" x="434" y="262" width="240" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -365,7 +361,4 @@
             <point key="canvasLocation" x="113.84892086330936" y="1062.5899280575541"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Grass" width="128" height="128"/>
-    </resources>
 </document>

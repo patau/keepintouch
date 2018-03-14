@@ -56,15 +56,15 @@ class SignUpViewController: UIViewController {
     }
     
     
-    @IBAction func confirmClick(_ sender: UIButton){
-    userRef.child(modelController.userInfo.displayName).setValue(["username":
-            modelController.userInfo.displayName])
-    userRef.child(modelController.userInfo.displayName).setValue(["icon":
-            modelController.userInfo.userIcon])
-        print(modelController.userInfo.userIcon)
-        print(modelController.userInfo.displayName)
-        
-    }
+//    @IBAction func confirmClick(_ sender: UIButton){
+//    userRef.child(modelController.userInfo.displayName).setValue(["username":
+//            modelController.userInfo.displayName])
+//    userRef.child(modelController.userInfo.displayName).setValue(["icon":
+//            modelController.userInfo.userIcon])
+//        print(modelController.userInfo.userIcon)
+//        print(modelController.userInfo.displayName)
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

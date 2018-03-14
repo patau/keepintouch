@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ConfirmInformationViewController: UIViewController {
     var modelController = ModelController()
     @IBOutlet weak var chosenImage: UIImageView!
+    //initial database reference, use this when you want to talk to it
+    let userRef = Database.database().reference().child("users")
     
     override func viewDidLoad() {
-        print("Pineapple: What what what")
         super.viewDidLoad()
         let userInfo = modelController.userInfo
         chosenImage.image = userInfo.userIcon
-        print("Pineappled: Confirm info")
         // Do any additional setup after loading the view.
     }
 
@@ -27,14 +29,22 @@ class ConfirmInformationViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("BEGIN PUSH: username")
+        userRef.child(modelController.userInfo.displayName).setValue(["username":
+        modelController.userInfo.displayName])
+        print("PUSH: icon")
+        // TODO: PUSH FILE, NOT STRING, TO DB
+        //userRef.child(modelController.userInfo.userIcon).setValue(["icon": modelController.userInfo.userIcon])
+        print("PUSHED")
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
