@@ -10,7 +10,15 @@
 		1538B2B1914195F663847A67 /* Pods_KeepInTouchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A0EE5B17235548D3867F84 /* Pods_KeepInTouchTests.framework */; };
 		3D2B5DE99A461CFB8E200A6C /* Pods_KeepInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C397A4765135CC1E99D2F78C /* Pods_KeepInTouch.framework */; };
 		85EA4C4D8D17FD5DDF01B0E5 /* Pods_KeepInTouchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48209C27FC7F98775DE46D61 /* Pods_KeepInTouchUITests.framework */; };
-		CF20B9192058A3E40068874D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF20B9182058A3E40068874D /* GoogleService-Info.plist */; };
+		9218815020698C1D001160D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9218814F20698C1D001160D5 /* GoogleService-Info.plist */; };
+		9218815120698C1D001160D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9218814F20698C1D001160D5 /* GoogleService-Info.plist */; };
+		9218815220698C1D001160D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9218814F20698C1D001160D5 /* GoogleService-Info.plist */; };
+		9218815420698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218815320698CC9001160D5 /* ConfirmGroupCreationViewController.swift */; };
+		9218815520698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218815320698CC9001160D5 /* ConfirmGroupCreationViewController.swift */; };
+		9218815620698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218815320698CC9001160D5 /* ConfirmGroupCreationViewController.swift */; };
+		92188158206992E4001160D5 /* ChoosePathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92188157206992E4001160D5 /* ChoosePathViewController.swift */; };
+		92188159206992E4001160D5 /* ChoosePathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92188157206992E4001160D5 /* ChoosePathViewController.swift */; };
+		9218815A206992E4001160D5 /* ChoosePathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92188157206992E4001160D5 /* ChoosePathViewController.swift */; };
 		CF20B91B2058A4510068874D /* ChooseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20B91A2058A4510068874D /* ChooseImageViewController.swift */; };
 		CF20B91D2058B0D90068874D /* ConfirmInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20B91C2058B0D90068874D /* ConfirmInformationViewController.swift */; };
 		CF3D6452202A80BF00780C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3D6451202A80BF00780C62 /* AppDelegate.swift */; };
@@ -51,10 +59,12 @@
 		57A0EE5B17235548D3867F84 /* Pods_KeepInTouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78601932087CC469120EFA3E /* Pods-KeepInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.release.xcconfig"; sourceTree = "<group>"; };
 		795142E4769A6955A76145CE /* Pods-KeepInTouchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.release.xcconfig"; sourceTree = "<group>"; };
+		9218814F20698C1D001160D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9218815320698CC9001160D5 /* ConfirmGroupCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmGroupCreationViewController.swift; sourceTree = "<group>"; };
+		92188157206992E4001160D5 /* ChoosePathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePathViewController.swift; sourceTree = "<group>"; };
 		B95A2F4993B9125F396E6DEA /* Pods-KeepInTouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchTests/Pods-KeepInTouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C344EB2EDF9C91DF1842392E /* Pods-KeepInTouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouchUITests/Pods-KeepInTouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C397A4765135CC1E99D2F78C /* Pods_KeepInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF20B9182058A3E40068874D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF20B91A2058A4510068874D /* ChooseImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseImageViewController.swift; sourceTree = "<group>"; };
 		CF20B91C2058B0D90068874D /* ConfirmInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmInformationViewController.swift; sourceTree = "<group>"; };
 		CF3D644E202A80BF00780C62 /* KeepInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,15 +165,17 @@
 		CF3D6450202A80BF00780C62 /* KeepInTouch */ = {
 			isa = PBXGroup;
 			children = (
-				CF20B9182058A3E40068874D /* GoogleService-Info.plist */,
+				9218814F20698C1D001160D5 /* GoogleService-Info.plist */,
 				CF3D6451202A80BF00780C62 /* AppDelegate.swift */,
 				CF3D6453202A80BF00780C62 /* ViewController.swift */,
 				CF3D6455202A80BF00780C62 /* Main.storyboard */,
+				92188157206992E4001160D5 /* ChoosePathViewController.swift */,
 				CF20B91C2058B0D90068874D /* ConfirmInformationViewController.swift */,
 				CFED89782049F7BD0049DF33 /* JoinGroupViewController.swift */,
 				CFED89762049F7A20049DF33 /* CreateGroupViewController.swift */,
 				CF8F8BEF2047C05E00814060 /* SignUpViewController.swift */,
 				CF20B91A2058A4510068874D /* ChooseImageViewController.swift */,
+				9218815320698CC9001160D5 /* ConfirmGroupCreationViewController.swift */,
 				CF8F8BF32047C6B800814060 /* UserInfo.swift */,
 				CF8F8BF52047C6DE00814060 /* ModelController.swift */,
 				CF3D645B202A80BF00780C62 /* Assets.xcassets */,
@@ -312,7 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF3D645F202A80BF00780C62 /* LaunchScreen.storyboard in Resources */,
-				CF20B9192058A3E40068874D /* GoogleService-Info.plist in Resources */,
+				9218815020698C1D001160D5 /* GoogleService-Info.plist in Resources */,
 				CF3D645C202A80BF00780C62 /* Assets.xcassets in Resources */,
 				CF3D6457202A80BF00780C62 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9218815120698C1D001160D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9218815220698C1D001160D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +515,9 @@
 				CFED89792049F7BD0049DF33 /* JoinGroupViewController.swift in Sources */,
 				CF20B91B2058A4510068874D /* ChooseImageViewController.swift in Sources */,
 				CF8F8BF62047C6DE00814060 /* ModelController.swift in Sources */,
+				9218815420698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */,
 				CF8F8BF42047C6B800814060 /* UserInfo.swift in Sources */,
+				92188158206992E4001160D5 /* ChoosePathViewController.swift in Sources */,
 				CF3D6452202A80BF00780C62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +526,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9218815520698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */,
+				92188159206992E4001160D5 /* ChoosePathViewController.swift in Sources */,
 				CF3D646A202A80BF00780C62 /* KeepInTouchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +536,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9218815620698CC9001160D5 /* ConfirmGroupCreationViewController.swift in Sources */,
+				9218815A206992E4001160D5 /* ChoosePathViewController.swift in Sources */,
 				CF3D6475202A80BF00780C62 /* KeepInTouchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

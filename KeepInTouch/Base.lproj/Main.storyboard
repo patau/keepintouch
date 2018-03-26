@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="826.61870503597129" y="1690.6474820143885"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Path View Controller-->
         <scene sceneID="Ijk-9x-Hpd">
             <objects>
-                <viewController id="ZdG-FE-AoR" sceneMemberID="viewController">
+                <viewController id="ZdG-FE-AoR" customClass="ChoosePathViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QHn-03-VZV"/>
                         <viewControllerLayoutGuide type="bottom" id="a13-Xf-h5S"/>
@@ -188,7 +188,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Join Group"/>
                                 <connections>
-                                    <segue destination="Nff-lL-9tW" kind="show" id="5EN-16-wql"/>
+                                    <segue destination="Nff-lL-9tW" kind="show" identifier="joinGroup" id="5EN-16-wql"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSB-Qw-H8w">
@@ -196,7 +196,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Group"/>
                                 <connections>
-                                    <segue destination="SyX-b3-3sF" kind="show" id="CzV-W9-uqg"/>
+                                    <segue destination="SyX-b3-3sF" kind="show" identifier="createGroup" id="o6k-qa-ZpG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,7 +298,11 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="sEP-9B-BuU"/>
-                        <barButtonItem title="Continue" id="21U-oY-iWc"/>
+                        <barButtonItem title="Continue" id="21U-oY-iWc">
+                            <connections>
+                                <segue destination="lEe-xw-tur" kind="show" id="Ee0-GL-yv5"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -309,6 +313,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SE3-v1-9rR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577.6978417266187" y="1691.3669064748203"/>
+        </scene>
+        <!--Confirm Group Creation View Controller-->
+        <scene sceneID="6we-rl-SCv">
+            <objects>
+                <viewController id="lEe-xw-tur" customClass="ConfirmGroupCreationViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9BP-pf-Yal"/>
+                        <viewControllerLayoutGuide type="bottom" id="l86-Rr-DEM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fp9-iY-yOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your new group is called: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-bv-ymn">
+                                <rect key="frame" x="455" y="227" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-Aw-dsj">
+                                <rect key="frame" x="535" y="285" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add others to your group using this code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-Lp-ytW">
+                                <rect key="frame" x="400" y="432" width="312" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-pf-nqe">
+                                <rect key="frame" x="535" y="493" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqH-U1-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.9208633093526" y="2439.5683453237411"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kiH-2T-q2m">
