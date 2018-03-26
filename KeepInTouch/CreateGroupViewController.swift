@@ -38,7 +38,7 @@ class CreateGroupViewController: UIViewController {
     @IBAction func confirmName(_ sender: UIButton) {
         var groupCode = arc4random()
         var stringCode = String(groupCode)
-        groupRef.child(stringCode).child("users").setValue(["name": "dave"])
+        groupRef.child(stringCode).child("users").setValue(["name": modelController.userInfo.displayName])
         groupRef.child(stringCode).child("group data").setValue(["group name": groupName])
         
     }

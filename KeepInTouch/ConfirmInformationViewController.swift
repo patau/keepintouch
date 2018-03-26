@@ -44,7 +44,15 @@ class ConfirmInformationViewController: UIViewController {
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+        if (segue.identifier == "groupsChoose") {
+            let segueVC = segue.destination as! ChoosePathViewController
+            print(modelController.userInfo.displayName)
+            segueVC.modelController = self.modelController
+            print("confirmUserInfoSegue: seguing")
+        } else {
+            print("Chump1")
+        }
+        print("Chump2")    }
     
 
 }

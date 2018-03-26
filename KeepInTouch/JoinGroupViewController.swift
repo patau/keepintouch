@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 class JoinGroupViewController: UIViewController {
 
-    
+    var modelController = ModelController()
     let groupRef = Database.database().reference().child("groups")
     var groupCode = ""
     
@@ -19,7 +19,7 @@ class JoinGroupViewController: UIViewController {
     @IBOutlet weak var confrimGroup: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let userInfo = modelController.userInfo
         // Do any additional setup after loading the view.
     }
 
@@ -29,13 +29,13 @@ class JoinGroupViewController: UIViewController {
     
     
     @IBAction func confirmGroup(_ sender: UIButton) {
-        groupRef.child(groupCode).observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as? NSDictionary
-            let users = value?["users"] as? String ?? ""
-            //let user = User(username: username)
-            
-            // ...
+        groupRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.hasChild(self.groupCode) {
+                print("found room")
+            } else {
+                print("error")
+            }
+
         }) { (error) in
             print(error.localizedDescription)
         }    }
