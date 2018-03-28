@@ -242,6 +242,7 @@
                                 <state key="normal" title="Confirm"/>
                                 <connections>
                                     <action selector="confirmGroup:" destination="Nff-lL-9tW" eventType="touchUpInside" id="nI7-mL-8iD"/>
+                                    <segue destination="qlf-xa-dfb" kind="show" identifier="confirmJoin" id="ouV-Xx-RcB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -255,6 +256,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h84-cc-RtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2280.7553956834531" y="985.61151079136698"/>
+        </scene>
+        <!--Confirm Join Group View Controller-->
+        <scene sceneID="OzR-YQ-cpw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrN-G5-G3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="qlf-xa-dfb" customClass="ConfirmJoinGroupViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dhg-cw-RV2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Xa-QD-Sxc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7K-qq-hF7">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRv-qe-iUy">
+                                <rect key="frame" x="229" y="79" width="655" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ConfirmText" destination="rRv-qe-iUy" id="FW4-qo-MnT"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3015.6474820143885" y="986.33093525179868"/>
         </scene>
         <!--Create Group View Controller-->
         <scene sceneID="5rB-46-eeT">
@@ -300,7 +331,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="sEP-9B-BuU"/>
                         <barButtonItem title="Continue" id="21U-oY-iWc">
                             <connections>
-                                <segue destination="lEe-xw-tur" kind="show" id="Ee0-GL-yv5"/>
+                                <segue destination="lEe-xw-tur" kind="show" identifier="confirmNewGroup" id="Ee0-GL-yv5"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -333,8 +364,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-Aw-dsj">
-                                <rect key="frame" x="535" y="285" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-Aw-dsj">
+                                <rect key="frame" x="481" y="274" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -347,8 +378,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-pf-nqe">
-                                <rect key="frame" x="535" y="493" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmy-pf-nqe">
+                                <rect key="frame" x="373" y="485" width="367" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -357,6 +388,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="groupCodeLabel" destination="Hmy-pf-nqe" id="jHQ-iN-vCz"/>
+                        <outlet property="newGroupLabel" destination="xNd-Aw-dsj" id="UkB-g5-xfZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqH-U1-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,4 +11,5 @@ import UIKit
 struct UserInfo {
     var displayName : String
     var userIcon: UIImage
+    var userID : String
 }

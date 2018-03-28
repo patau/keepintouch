@@ -13,7 +13,8 @@ class JoinGroupViewController: UIViewController {
 
     var modelController = ModelController()
     let groupRef = Database.database().reference().child("groups")
-    var groupCode = ""
+    var groupCode = String()
+    var groupName = String()
     
     @IBOutlet weak var roomCodeField: UITextField!
     @IBOutlet weak var confrimGroup: UIButton!
@@ -30,15 +31,22 @@ class JoinGroupViewController: UIViewController {
     
     @IBAction func confirmGroup(_ sender: UIButton) {
         groupRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            if snapshot.hasChild(self.groupCode) {
+            if snapshot.hasChild(self.groupCode) { //Group is found
                 print("found room")
-            } else {
+                let uid = self.modelController.userInfo.userID
+                let userName = self.modelController.userInfo.displayName
+                let addUser = ["/users/\(uid)": userName]
+                self.groupRef.child(self.groupCode).updateChildValues(addUser)
+//                self.groupName = self.groupRef.child(self.groupCode).child("group data").child("group name").value(forKey: "group name") as! String
+                
+            } else { //Group is not found
                 print("error")
             }
 
-        }) { (error) in
+        }) { (error) in //Overall error in contacting firebase
             print(error.localizedDescription)
-        }    }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,14 +54,17 @@ class JoinGroupViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
     }
-    */
-
+    
 }
+    
+
+
