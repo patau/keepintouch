@@ -17,6 +17,7 @@ class CreateGroupViewController: UIViewController {
     
     var modelController = ModelController()
     var groupName = ""
+    var stringCode = String()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,20 +37,27 @@ class CreateGroupViewController: UIViewController {
     }
     
     @IBAction func confirmName(_ sender: UIButton) {
-        var groupCode = arc4random()
-        var stringCode = String(groupCode)
+        let groupCode = arc4random()
+        stringCode = String(groupCode)
         groupRef.child(stringCode).child("users").setValue(["name": modelController.userInfo.displayName])
         groupRef.child(stringCode).child("group data").setValue(["group name": groupName])
         
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if (segue.identifier == "confirmNewGroup") {
+            let segueVC = segue.destination as! ConfirmGroupCreationViewController
+            segueVC.modelController = self.modelController
+            segueVC.groupName = self.groupName
+            segueVC.groupCode = self.stringCode
+            print("confirmNewGroupSegue: seguing")
+        } else {
+            print("Chump1")
+        }
+        print("Chump2")    }    }
+    
 
-}
+

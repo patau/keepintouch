@@ -35,8 +35,11 @@ class ConfirmInformationViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("BEGIN PUSH: username")
-        userRef.child(modelController.userInfo.displayName).setValue(["username":
+        var newRef = userRef.childByAutoId()
+        newRef.setValue(["username":
         modelController.userInfo.displayName])
+        var uid = newRef.key
+        modelController.userInfo.userID = uid
         print("PUSH: icon")
         // TODO: PUSH FILE, NOT STRING, TO DB
         //userRef.child(modelController.userInfo.userIcon).setValue(["icon": modelController.userInfo.userIcon])
